@@ -1,0 +1,49 @@
+<script>
+    //function declaration//
+    function add (a , b) {
+        console.log(a + b);
+    }
+
+    add(10, 20)
+
+    function mul (x , y) {
+        return x * y;
+    }
+    console.log(mul(10, 20));
+
+
+  //function expression//
+    let add1 = function(a , b) {
+        console.log(a + b); 
+           }
+           add1(10,20);
+           console.log(add1);
+
+
+           let mul1 = function(a , b) {
+            return a * b;
+           }
+           console.log(mul1(10,20));
+
+           //arrow function//
+           let add2 = (a,b)=> {
+            console.log(a + b);
+           }
+           add2(10,20)
+
+           let mul2 = (x,y)=> {
+            return x*y;
+           }
+           console.log(mul2(10,20));
+
+           const isEven = (number) => number % 2 == 0;
+           console.log(isEven(10));
+
+
+           const even = (number) => {
+            if(number % 2 == 0) {
+                 return true;
+            }
+           }
+           console.log(even(10));
+</script>

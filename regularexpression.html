@@ -1,0 +1,22 @@
+<body>
+    <form> 
+        <input type="text" id = 'infield'>
+        <br><br>
+        <span style="color: red;" id = "msg">*</span>
+        <br><br>
+        <button onclick=" return validate()">Submit</button>
+    </form>
+</body>
+
+<script>
+     function validate(){
+        var data = document.getElementById('infield').value;
+        let pattern = /^[a-zA-Z]{2,20}$/
+        if(pattern.test(data)) {
+            alert('Data is valid')
+        }
+        else {
+            alert('Data is Invalid')
+        }
+     }
+</script>

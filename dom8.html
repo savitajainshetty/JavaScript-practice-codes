@@ -1,0 +1,24 @@
+<body>
+    <form>
+    <input id="num1" placeholder="num1" />
+    <input id="num2" placeholder="num2" />
+    <button id="add">Add</button>
+    <button id="mul">mul</button>
+    <h3 id="res"></h3>
+
+</form>
+</body>
+<script>
+     document.getElementById("add").addEventListener('click',(e)=>{
+        e.preventDefault();
+       var num1= Number(document.getElementById('num1').value);
+       var num2= Number(document.getElementById('num2').value);
+       document.getElementById('res').textContent = `Addition is: ${num1 + num2}`;
+     });
+     document.getElementById("mul").addEventListener('click',(e)=>{
+        e.preventDefault();
+       var num1= Number(document.getElementById('num1').value);
+       var num2= Number(document.getElementById('num2').value);
+       document.getElementById('res').textContent = `Multiplication is: ${num1 * num2}`;
+     });
+</script>

@@ -1,0 +1,36 @@
+<script>
+
+       function processGreet(fun) {
+        fun("akshay");
+        console.log(fun());
+       }
+
+       processGreet((name) => console.log("Name is:", name));
+
+       function processaddition(add) {
+        add(10,20)
+       }
+       processaddition((a,b) => console.log(a + b));
+
+       function processMultiplication(mul) {
+        mul(10,20)
+       }
+       processMultiplication((a,b) => console.log(a * b));
+
+       function processDivision(div) {
+        div(10,20)
+       }
+       processDivision((a,b) => console.log(a / b));
+
+       function processRemainder(mod) {
+        mod(10,20)
+       }
+       processRemainder((a,b) => console.log(a % b));
+</script>
+
+<!----The function which accepts another function as an argument, 
+such functions are called as Higher order function.
+
+The function which is being passed an argument to another functions,
+such functions are called as callback functions.-->
+

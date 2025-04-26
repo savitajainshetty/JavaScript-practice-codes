@@ -1,0 +1,27 @@
+<script>
+  class Student {
+    constructor(name,age,marks) {
+        this.name = name;
+        this.age = age;
+        this.marks = marks;
+    }
+
+    study() {
+        console.log(this.name,'Student is Learning');
+    }
+
+    play() {
+        console.log(this.name,'is playing of age', this.age);
+    }
+  }
+
+  let s1 = new Student('pooja',23,55);
+  let s2 = new Student('akhay',34,34);
+  s1.study();
+  s2.study();
+  s1.play();
+  s2.play();
+
+
+
+</script>

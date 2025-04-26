@@ -1,0 +1,53 @@
+<script>
+    function placeOrder() {
+        return new promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log("Order placed..!");
+                resolve();
+            },4000);
+        });
+    }
+
+    function makePayment() {
+        return new promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log("payment done..!");
+                //resolve();
+                reject('Not enough balance');
+            },3000);
+        });
+    }
+
+    function confirmOrder() {
+        return new promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log("Order confirmed..!");
+                resolve();
+            },2000);
+        });
+    }
+
+    function sentEmail() {
+        return new promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log("Email sent..!");
+                resolve();
+            },1000);
+        });
+    }
+    function processOrder() {
+        console.log("process started..!");
+        placeOrder()
+    .then(()=>makePayment())
+    .then(()=>confirmOrder())
+    .then(()=>sentEmail())
+    .then(()=>console.log("order placed process ended..!"))
+    .catch((msg)=>console.log("Error msg..!",msg));
+    console.log("final process ended..!");
+    }
+
+    
+    
+
+
+</script>

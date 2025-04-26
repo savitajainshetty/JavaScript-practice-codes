@@ -1,0 +1,14 @@
+<script>
+    let p1 = new Promise((resolve, reject)=>{
+        settimeout(()=> {
+            console.log('Fectching the data...!!');
+            resolve('12345');
+        }, 4000);
+    });
+
+    p1.then((data)=>{
+        console.log("Fetched data is:",data)
+    }).catch((msg)=> {
+        console.log("Error msg:",msg);
+    })
+</script>

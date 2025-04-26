@@ -1,0 +1,32 @@
+<style>
+    .dark {
+        background-color: black;
+        color: white;
+    }
+</style><body>
+    <h3>Hello</h3>
+    <button id = "btn" onclick="changeclr()">Dark Mode</button>
+</body>
+
+<script>
+    var toggle = true;
+    var target = document.querySelector("h3");
+    var btn = document.getElementById('btn')
+    function changeclr() {
+        if (toggle) {
+        btn.textContent = "Light Mode";
+        //target.style.color = "White";
+        //document.body.style.backgroundColor = "black";
+        target.classList.add("dark")
+        toggle = false;
+    }
+    else {
+        btn.textContent = "Dark Mode"
+       // target.style.color = "black";
+        //document.body.style.backgroundColor = "White";
+        target.classList.remove("dark");
+        toggle = true;
+    }
+}
+    
+</script>

@@ -1,0 +1,43 @@
+<script>
+    function add() {
+        if(arguments.length == 0) {
+            console.log("Addition is: 0");
+        } else {
+            var sum = 0;
+            for (i = 0; i < arguments.length; i++) {
+                sum = sum + arguments[i];
+            }
+            console.log("Addition is:", sum);
+        }
+    }
+    add();
+    add(10,20);
+    add(10,20,30,40,50);
+
+
+    function mul() {
+        if(arguments.length == 0) {
+            console.log("0");
+        }
+     else if(arguments.length == 1) {
+        console.log(arguments[0]);
+    } else {
+        var p = 1;
+        for (i = 0; i < arguments.length; i++) {
+            p = p * arguments[i];
+    }
+    console.log("multiplication is:", p);
+    }
+}
+    mul()
+    mul(10);
+    mul(2,3);
+    mul(3,4,5);
+
+    //res = arguments.reduce((acc,ele) => acc * ele,1); // ERROR
+</script>
+
+<!--
+1.arguments objects wont support array methods like filter, map and reduce etc.
+2.arguments object are not supported by arrow function.
+-->

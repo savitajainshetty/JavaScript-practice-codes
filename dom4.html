@@ -1,0 +1,20 @@
+<body>
+    <p class="p1">para1</p>
+    <p class="p1">para2</p>
+</body>
+
+<script>
+    var target = document.querySelectorAll(".p1");
+    console.log(target.length);
+   // var target2 =  document.getElementClassName("p1");
+    //console.log(target);
+   // console.log(target2);
+   var newele = document.createElement('p');
+   newele.classList.add('p1')
+   document.body.appendChild(newele);
+
+   console.log(target.length);
+</script>
+
+<!----queryselectorAll() selects all elemts that matches
+css selector and returns static node list.-->

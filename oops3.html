@@ -1,0 +1,33 @@
+<script>
+    class Employee {
+    constructor(name,id,dept) {        // local variables
+        this.name = name;              // this.name--instatnce variables
+        this.id = id;
+        this.dept = dept;
+    }
+
+    work() {                                // instance methods.
+        console.log(this.name,'is working');
+    }
+
+    play() {
+        console.log(this.name,'is palying');
+    }
+    code() {
+        console.log(this.name,'is coding');
+    }
+  }
+
+  let e1 = new Employee('akshay',101,'sales');
+  let e2 = new Employee('pooja',102,'marketing');
+  let e3 = new Employee('Ramesh',103,'development');
+  e1.work();
+  e1.play();
+  e1.code();
+  e2.work();
+  e2.play();
+  e2.code();
+  e3.work();
+  e3.play();
+  e3.code();
+</script>

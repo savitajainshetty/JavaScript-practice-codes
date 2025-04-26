@@ -1,0 +1,51 @@
+<script>
+    let arr = [10,20,30,40,50]
+    console.log("initial array", arr)
+    arr.push(60);
+    console.log("After push",arr);
+
+    arr.unshift(5);
+    console.log("after unshift",arr);
+
+    arr.pop();
+    console.log("after pop",arr);
+
+    arr.shift();
+    console.log("after shift",arr);
+
+    arr[1] = 200
+    console.log("after replacing",arr);
+
+    arr1 = [100,200,300,400,500,600]
+   let deleted_ele = arr1.splice(2,3,900,800)
+   console.log(deleted_ele);
+   console.log("after splice arr1:", arr1);
+
+   numbers = [99,98,97,96,95,94]
+   sub_list = numbers.slice(1,4);
+   console.log(sub_list);
+   console.log(numbers);
+
+</script>
+
+<!--
+1.push(): adds elements end of an array
+
+2.unshift(): adds elements at first
+
+3.pop(): removes last element
+
+4.shift():removes first element
+
+5.splice(start index,delete count,elements to be added)
+splice returns deleted elements.
+
+6.slice(start index,end index - 1):
+creates sub array(does not change original array)
+
+7.indexOf(ele):returns index of specific element
+
+8.includes(ele):checks, if an element present in an arry or not:
+returns true or false
+
+9.sort():sort the elements in an alphabetical order-->

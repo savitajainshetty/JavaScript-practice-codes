@@ -1,0 +1,39 @@
+<script>
+    function placeOrder(callback) {
+        setTimeout(()=> {
+            console.log("Order placed");
+            callback()
+        }, 4000);
+    }
+
+    function makePayment(callback) {
+        setTimeout(()=> {
+            console.log("payment received");
+            callback()
+        }, 3000);
+    }
+
+    function confirmOrder(callback) {
+        setTimeout(()=> {
+            console.log("Order conformed");
+            callback()
+        }, 2000);
+    }
+
+    function sendEmail() {
+        setTimeout(()=> {
+            console.log("Email sent sucessfully....!");
+        }, 1000);
+    }
+
+    placeOrder(()=>{
+        makePayment(()=>{
+            confirmOrder(()=>{
+                sendEmail();
+            });
+        });
+    });
+   
+
+    console.log("Other Tasks");
+</script>

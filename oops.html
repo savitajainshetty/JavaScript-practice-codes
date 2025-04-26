@@ -1,0 +1,32 @@
+<Script>
+class Ticket {
+    constructor(number,price) {           // constuctor is built in method.
+    this.num = number;                    // this is used to point towards current object.
+     this.t_price = price;
+}
+}
+
+let t1 = new Ticket('1234',600);
+let t2 = new Ticket('12344',700);
+
+console.log(t1.num);
+console.log(t1.t_price);
+console.log(t2.num);
+console.log(t2.t_price);
+
+
+class Movie {
+ constructor(name,rate) {            // constuctor is built in method.
+  this.name = name;                 // this is used to point towards current object.
+  this.ratings = rate;
+    }
+}
+   
+let m1 = new Movie('KGF',5);
+let m2 = new Movie('ABC',4);
+
+console.log(m1.name);
+    console.log(m1.ratings);
+    console.log(m2.name);
+    console.log(m2.ratings);
+</Script>

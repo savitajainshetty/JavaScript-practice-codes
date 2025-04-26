@@ -1,0 +1,18 @@
+<script>
+    function outer() {
+        var out = 100;
+
+
+        function inner() {
+            var inn = 400;
+            function innermost() {
+                console.log(inn);
+                console.log(out);
+            }
+        return innermost;
+        }
+        return inner;
+    }
+
+    var ref = outer(); 
+</script>

@@ -1,0 +1,18 @@
+<body>
+    <form>
+        <input type="text" id="name" name = 'fname'>
+        <input type="number" id="age" name = 'age'><br><br>
+        <button onclick="return validate()">Submit</button>
+    </form>
+</body>
+
+<script>
+    function validate() {
+    var form = document.querySelector('form');
+    let name = form.fname.value;
+    let age = form.age.value;
+    console.log(name, age);
+    form.reset()
+    return false;
+    }
+</script>
